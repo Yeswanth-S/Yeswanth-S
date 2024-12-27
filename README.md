@@ -15,7 +15,7 @@ A full-stack application built using Flask, OpenCV, and TensorFlow that detects 
 
 - **Tech Stack**:
   - **Frontend**: HTML, CSS, JavaScript
-  - **Backend**: Flask
+  - **Backend**: Flask , Django
   - **Computer Vision**: OpenCV
   - **Machine Learning**: TensorFlow
 
