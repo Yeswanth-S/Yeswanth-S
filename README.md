@@ -1,50 +1,52 @@
-# 👋 Hi, I'm Yeswanth S
+<pre>
+yeswanth@github:~$ whoami
 
-I'm a **full-stack developer** with a strong interest in **Linux** and **AI/ML applications**. My projects focus on building robust web applications and integrating machine learning models into real-world solutions.
+👋 Hi, I'm Yeswanth S
 
----
+██╗   ██╗███████╗███████╗██╗    ██╗ █████╗ ███╗   ██╗████████╗██╗  ██╗    ███████╗
+╚██╗ ██╔╝██╔════╝██╔════╝██║    ██║██╔══██╗████╗  ██║╚══██╔══╝██║  ██║    ██╔════╝
+ ╚████╔╝ █████╗  ███████╗██║ █╗ ██║███████║██╔██╗ ██║   ██║   ███████║    ███████╗
+  ╚██╔╝  ██╔══╝  ╚════██║██║███╗██║██╔══██║██║╚██╗██║   ██║   ██╔══██║    ╚════██║
+   ██║   ███████╗███████║╚███╔███╔╝██║  ██║██║ ╚████║   ██║   ██║  ██║    ███████║
+   ╚═╝   ╚══════╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝    ╚══════╝
 
-## 🌟 Projects
+  I'm a full-stack developer passionate about Linux and AI/ML applications.  
+  I build robust web apps and integrate machine learning into real-world solutions.
 
-### 🚀 [Emotion Recognition App](https://github.com/YESWANTH-S/Emotion_Recognition_App)
+  yeswanth@github:~$ cat projects.txt
+  
+  🚀 <a href="https://github.com/YESWANTH-S/Emotion_Recognition_App">Emotion Recognition App</a>
+  A full-stack app that detects emotions from:
+  📸 Images
+  🎥 Videos
+  📹 Live webcam feed
+  
+  yeswanth@github:~$ echo "Tech Stack:"
+  
+  🧠 Tech Stack:
+    Frontend: HTML, CSS, JS
+    Backend: Flask
+    ML: TensorFlow
+    CV: OpenCV
 
-A full-stack application that detects emotions from images, videos, and live feeds using **Flask**, **OpenCV**, and **TensorFlow**. 
+  yeswanth@github:~$ ls tech_stack/
+  
+  📁 Languages:         Python, JavaScript  
+  📁 Frameworks:        Flask, TensorFlow  
+  📁 Tools:             Git, GitHub, OpenCV, Jupyter  
+  📁 OS & Shell:        Linux, Bash
 
-- **Features:**
-  - Upload images for emotion detection.
-  - Analyze videos frame by frame.
-  - Use your webcam for real-time detection.
-  - View live feed for continuous analysis.
+  yeswanth@github:~$ nano learning.txt
+  
+  📘 Currently Learning:
+    - Advanced Full-Stack Development
+    - Linux Administration & Scripting
 
-- **Tech Stack:**
-  - **Frontend:** HTML, CSS, JavaScript
-  - **Backend:** Flask
-  - **Computer Vision:** OpenCV
-  - **Machine Learning:** TensorFlow
+  yeswanth@github:~$ ./contact_me.sh
+  
+  📫 Email: <a href="mailto:yeswanthshanmugam@gmail.com">yeswanthshanmugam@gmail.com</a>  
+  💬 Always open to tech chats & collabs!
 
----
-
-## 🛠️ Technologies & Tools
-
-- **Languages:** Python, JavaScript  
-- **Frameworks:** Flask, TensorFlow  
-- **Tools:** Git, GitHub, Jupyter Notebook, OpenCV, Linux  
-- **Version Control:** Git & GitHub  
-
----
-
-## 💡 Currently Learning
-
-- **Advanced Full-Stack Development Techniques**
-- **Linux Administration and Scripting**
-
----
-
-## 📫 Get in Touch
-
-- 📧 Email: [yeswanthshanmugam@gmail.com](mailto:yeswanthshanmugam@gmail.com)  
-- 💬 Let's discuss technology, AI, and development!
-
----
-
-✅ Thanks for visiting my profile! 🚀
+  yeswanth@github:~$ echo "Thanks for stopping by!"  
+  ✅ Thanks for visiting my profile! 🚀
+  </pre>
