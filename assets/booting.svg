@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="auto">
+  <defs>
+    <!-- Dark Mode Gradient -->
+    <linearGradient id="lavenderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7a7fcd" />
+      <stop offset="100%" stop-color="#a079d4" />
+    </linearGradient>
+
+    <!-- Light Mode Gradient -->
+    <linearGradient id="lightModeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c3e50" />
+      <stop offset="100%" stop-color="#34495e" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .terminal {
+      font-family: monospace;
+      font-size: 18px;
+    }
+
+    .greeting {
+      font-family: monospace;
+      font-size: 18px;
+      opacity: 0;
+    }
+
+    .stroke-text {
+      font-family: monospace;
+      font-size: 180px;
+      fill: none;
+      stroke-width: 3;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: drawText 8s ease-in-out forwards;
+      animation-delay: 10s;
+    }
+
+    /* Default gradient for light mode */
+    .terminal, .ascii {
+      fill: url(#lightModeGradient); /* Default light mode gradient */
+    }
+
+    /* Dark mode gradient */
+    @media (prefers-color-scheme: dark) {
+      .terminal, .ascii {
+        fill: url(#lavenderGradient); /* Dark mode gradient */
+      }
+
+      .greeting {
+        fill: white; /* Dark mode greeting text color */
+      }
+
+      .stroke-text {
+        stroke: url(#lavenderGradient); /* Dark mode stroke gradient */
+      }
+    }
+
+    /* Light mode stroke text */
+    @media (prefers-color-scheme: light) {
+      .greeting {
+        fill: black; /* Light mode greeting text color */
+      }
+
+      .stroke-text {
+        stroke: url(#lightModeGradient); /* Light mode stroke gradient */
+      }
+    }
+
+    /* Keyframe animation for drawing the stroke */
+    @keyframes drawText {
+      0% {
+        stroke-dashoffset: 1000;
+      }
+      50% {
+        stroke-dashoffset: 500; /* Create a pause effect halfway */
+      }
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    /* Fade-in for the ASCII text */
+    .ascii {
+      font-family: monospace;
+      font-size: 14px;
+      white-space: pre;
+      opacity: 0; /* Set initial opacity to 0 for fade-in effect */
+    }
+
+    /* Fade-in for each line with a slight delay */
+    .ascii-line {
+      opacity: 0;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+
+    /* Sequential fade-in with a delay for each line */
+    .line1 {
+      animation-delay: 18s;
+    }
+    .line2 {
+      animation-delay: 18.5s;
+    }
+    .line3 {
+      animation-delay: 19s;
+    }
+    .line4 {
+      animation-delay: 19.5s;
+    }
+    .line5 {
+      animation-delay: 20s;
+    }
+    .line6 {
+      animation-delay: 21s;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+
+  <!-- Terminal Boot Sequence -->
+  <text class="terminal" x="0" y="50">
+    Loading...
+    <animate attributeName="opacity" from="1" to="0" dur="2s" begin="0s" fill="freeze"/>
+  </text>
+
+  <text class="terminal" x="0" y="50" opacity="0">
+    Booting... please wait.
+    <animate attributeName="opacity" from="0" to="1" dur="2s" begin="2s" fill="freeze"/>
+    <animate attributeName="opacity" from="1" to="0" dur="2s" begin="5s" fill="freeze"/>
+  </text>
+
+  <text class="terminal" x="0" y="50" opacity="0">
+    Profile Loaded.
+    <animate attributeName="opacity" from="0" to="1" dur="2s" begin="6s" fill="freeze"/>
+    <animate attributeName="opacity" from="1" to="0" dur="2s" begin="8s" fill="freeze"/>
+  </text>
+
+  <text class="terminal" x="0" y="50" opacity="0">
+    yeswanth@github:~$ whoami
+    <animate attributeName="opacity" from="0" to="1" dur="2s" begin="9s" fill="freeze"/>
+  </text>
+
+  <!-- Greeting Text -->
+  <text class="greeting" x="0" y="100">
+    👋 Hi, I'm 
+    <animate attributeName="opacity" from="0" to="1" dur="2s" begin="10s" fill="freeze"/>
+  </text>
+
+  <!-- Stroke Text with gradient -->
+  <text x="0" y="260" class="stroke-text">
+    YESWANTH S
+    <animate attributeName="opacity" from="1" to="0" dur="1s" begin="18s" fill="freeze"/>
+  </text>
+
+  <!-- ASCII Art with fade-in for each line -->
+  <text class="ascii ascii-line line1" x="-35" y="140" dominant-baseline="text-before-edge">
+    ██╗   ██╗  ███████╗  ███████╗  ██╗    ██╗   █████╗   ███╗   ██╗  ████████╗  ██╗  ██╗    ███████╗
+  </text>
+  <text class="ascii ascii-line line2" x="-35" y="162" dominant-baseline="text-before-edge">
+    ╚██╗ ██╔╝  ██╔════╝  ██╔════╝  ██║    ██║  ██╔══██╗  ████╗  ██║  ╚══██╔══╝  ██║  ██║    ██╔════╝
+  </text>
+  <text class="ascii ascii-line line3" x="-35" y="184" dominant-baseline="text-before-edge">
+     ╚████╔╝   █████╗    ███████╗  ██║ █╗ ██║  ███████║  ██╔██╗ ██║     ██║     ███████║    ███████╗
+  </text>
+  <text class="ascii ascii-line line4" x="-35" y="206" dominant-baseline="text-before-edge">
+      ╚██╔╝    ██╔══╝    ╚════██║  ██║███╗██║  ██╔══██║  ██║╚██╗██║     ██║     ██╔══██║    ╚════██║
+  </text>
+  <text class="ascii ascii-line line5" x="-35" y="228" dominant-baseline="text-before-edge">
+       ██║     ███████╗  ███████║  ╚███╔███╔╝  ██║  ██║  ██║ ╚████║     ██║     ██║  ██║    ███████║
+  </text>
+  <text class="ascii ascii-line line6" x="-35" y="250" dominant-baseline="text-before-edge">
+       ╚═╝     ╚══════╝  ╚══════╝   ╚══╝╚══╝   ╚═╝  ╚═╝  ╚═╝  ╚═══╝     ╚═╝     ╚═╝  ╚═╝    ╚══════╝
+  </text>
+
+</svg>
