@@ -4,22 +4,34 @@
   alt="Animated terminal boot sequence introducing Yeswanth S" 
   style="width: 100%;  display: block; margin: 20px 0;" />
 
-I'm a full-stack developer passionate about Linux and AI/ML applications.  
-I build robust web apps and integrate machine learning into real-world solutions.
+I'm a full-stack developer with a focus on Linux, AI/ML, and building efficient web applications.
+I develop robust tools, streamline workflows, and integrate machine learning into practical solutions.
 
 yeswanth@github:~$ cat projects.txt
   
-🤖 <a href="https://github.com/YESWANTH-S/Emotion_Recognition_App">Emotion Recognition App</a>
-A full-stack app that detects emotions from:
-📸 Images
-🎥 Videos
-📹 Live webcam feed
+^_^ <a href="https://github.com/YESWANTH-S/Emotion_Recognition_App">Emotion Recognition App</a>
 
-🛠️ Tech Stack (Used in Emotion Recognition App):
-  Frontend: HTML, CSS, JS
-  Backend: Flask
-  ML: TensorFlow
-  CV: OpenCV
+A full-stack app that detects emotions from:
+- >  Image Files  
+- >  Video Files  
+- >  Live Webcam Feed
+
+Tech Stack:  
+Frontend: HTML, CSS, JavaScript  
+Backend: Flask (Python)  
+ML: TensorFlow  
+
+>_  <a href="https://github.com/YESWANTH-S/Terminal-Converter">Terminal Converter</a>  
+
+A sleek, terminal-inspired multimedia file converter:  
+- > Drag & drop file support
+- > Choose your desired output format easily
+- > Efficient processing powered by FFmpeg
+
+Tech Stack:  
+Frontend: HTML, CSS, JavaScript  
+Backend: Flask (Python)  
+Conversion Engine: FFmpeg
 
 yeswanth@github:~$ ls tech_stack/
   
@@ -30,15 +42,15 @@ yeswanth@github:~$ ls tech_stack/
 
 yeswanth@github:~$ nano learning.txt
   
-📘 Currently Learning:
+📝 Currently Learning:
   - Advanced Full-Stack Development (React, Node.js)
   - Linux Administration & Scripting (Zsh, System Automation)
 
 yeswanth@github:~$ ./contact_me.sh
   
-📫 Email: <a href="mailto:yeswanthshanmugam@gmail.com">yeswanthshanmugam@gmail.com</a>  
+✉️ Email: <a href="mailto:yeswanthshanmugam@gmail.com">yeswanthshanmugam@gmail.com</a>  
 💬 Always open to tech chats & collabs!
 
 yeswanth@github:~$ echo "Thanks for stopping by!"  
-✅ Thanks for visiting my profile! 🚀
+❤️ Thanks for visiting my profile!
 </pre>
