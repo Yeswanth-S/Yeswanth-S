@@ -31,7 +31,7 @@ A sleek, terminal-inspired multimedia file converter:
 Tech Stack:  
 Frontend: HTML, CSS, JavaScript  
 Backend: Flask (Python)  
-Conversion Engine: FFmpeg
+Conversion Engine: FFmpeg, Cairosvg
 
 yeswanth@github:~$ ls tech_stack/
   
