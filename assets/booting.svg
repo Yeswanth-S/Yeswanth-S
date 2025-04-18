@@ -32,8 +32,8 @@
       stroke-width: 3;
       stroke-dasharray: 1000;
       stroke-dashoffset: 1000;
-      animation: drawText 8s ease-in-out forwards;
-      animation-delay: 10s;
+      animation: drawText 4s ease-in-out forwards;
+      animation-delay: 7s; /* Starts at 7s to finish by 11s */
     }
 
     /* Default gradient for light mode */
@@ -67,7 +67,7 @@
       }
     }
 
-    /* Keyframe animation for drawing the stroke */
+    /* Keyframe animation for drawing the stroke with pause */
     @keyframes drawText {
       0% {
         stroke-dashoffset: 1000;
@@ -80,39 +80,42 @@
       }
     }
 
+    /* Fade-out effect after stroke completes */
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    .stroke-text {
+      animation: drawText 4s ease-in-out forwards, fadeOut 1s ease-in-out forwards;
+      animation-delay: 7s, 11s;
+    }
+
     /* Fade-in for the ASCII text */
     .ascii {
       font-family: monospace;
       font-size: 14px;
       white-space: pre;
-      opacity: 0; /* Set initial opacity to 0 for fade-in effect */
+      opacity: 0;
     }
 
     /* Fade-in for each line with a slight delay */
     .ascii-line {
       opacity: 0;
-      animation: fadeIn 2s ease-in-out forwards;
+      animation: fadeIn 1s ease-in-out forwards;
     }
 
-    /* Sequential fade-in with a delay for each line */
-    .line1 {
-      animation-delay: 18s;
-    }
-    .line2 {
-      animation-delay: 18.5s;
-    }
-    .line3 {
-      animation-delay: 19s;
-    }
-    .line4 {
-      animation-delay: 19.5s;
-    }
-    .line5 {
-      animation-delay: 20s;
-    }
-    .line6 {
-      animation-delay: 21s;
-    }
+    /* Sequential fade-in with a delay for each line, starting after 11s */
+    .line1 { animation-delay: 11.5s; }
+    .line2 { animation-delay: 12s; }
+    .line3 { animation-delay: 12.5s; }
+    .line4 { animation-delay: 13s; }
+    .line5 { animation-delay: 13.5s; }
+    .line6 { animation-delay: 14s; }
 
     @keyframes fadeIn {
       from {
@@ -127,36 +130,35 @@
   <!-- Terminal Boot Sequence -->
   <text class="terminal" x="0" y="50">
     Loading...
-    <animate attributeName="opacity" from="1" to="0" dur="2s" begin="0s" fill="freeze"/>
+    <animate attributeName="opacity" from="1" to="0" dur="1s" begin="0s" fill="freeze"/>
   </text>
 
   <text class="terminal" x="0" y="50" opacity="0">
     Booting... please wait.
-    <animate attributeName="opacity" from="0" to="1" dur="2s" begin="2s" fill="freeze"/>
-    <animate attributeName="opacity" from="1" to="0" dur="2s" begin="5s" fill="freeze"/>
+    <animate attributeName="opacity" from="0" to="1" dur="1s" begin="1s" fill="freeze"/>
+    <animate attributeName="opacity" from="1" to="0" dur="1s" begin="2s" fill="freeze"/>
   </text>
 
   <text class="terminal" x="0" y="50" opacity="0">
     Profile Loaded.
-    <animate attributeName="opacity" from="0" to="1" dur="2s" begin="6s" fill="freeze"/>
-    <animate attributeName="opacity" from="1" to="0" dur="2s" begin="8s" fill="freeze"/>
+    <animate attributeName="opacity" from="0" to="1" dur="1s" begin="3s" fill="freeze"/>
+    <animate attributeName="opacity" from="1" to="0" dur="1s" begin="4s" fill="freeze"/>
   </text>
 
   <text class="terminal" x="0" y="50" opacity="0">
     yeswanth@github:~$ whoami
-    <animate attributeName="opacity" from="0" to="1" dur="2s" begin="9s" fill="freeze"/>
+    <animate attributeName="opacity" from="0" to="1" dur="1s" begin="5s" fill="freeze"/>
   </text>
 
   <!-- Greeting Text -->
   <text class="greeting" x="0" y="100">
     👋 Hi, I'm 
-    <animate attributeName="opacity" from="0" to="1" dur="2s" begin="10s" fill="freeze"/>
+    <animate attributeName="opacity" from="0" to="1" dur="1s" begin="6s" fill="freeze"/>
   </text>
 
   <!-- Stroke Text with gradient -->
   <text x="0" y="260" class="stroke-text">
     YESWANTH S
-    <animate attributeName="opacity" from="1" to="0" dur="1s" begin="18s" fill="freeze"/>
   </text>
 
   <!-- ASCII Art with fade-in for each line -->
