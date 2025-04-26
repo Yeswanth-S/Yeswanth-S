@@ -1,6 +1,6 @@
 <pre>
 <img 
-  src="https://raw.githubusercontent.com/YESWANTH-S/YESWANTH-S/main/assets/booting.svg" 
+  src="assets/booting.svg" 
   alt="Animated terminal boot sequence introducing Yeswanth S" 
   style="width: 100%;  display: block; margin: 20px 0;" />
 
@@ -46,6 +46,9 @@ yeswanth@github:~$ nano learning.txt
   - Advanced Full-Stack Development (React, Node.js)
   - Linux Administration & Scripting (Zsh, System Automation)
 
+yeswanth@github:~$ grep -i "stats" ~/github_data
+<img src="https://term-stats.onrender.com/basic" alt="GitHub Stats" width="350" /> 
+<img src="https://term-stats.onrender.com/streaks" alt="GitHub Stats" width="350" />
 yeswanth@github:~$ ./contact_me.sh
   
 ✉️ Email: <a href="mailto:yeswanthshanmugam@gmail.com">yeswanthshanmugam@gmail.com</a>  
