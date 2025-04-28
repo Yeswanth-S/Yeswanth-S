@@ -12,21 +12,21 @@ yeswanth@github:~$ cat projects.txt
 ^_^ <a href="https://github.com/YESWANTH-S/Emotion_Recognition_App">Emotion Recognition App</a>
 
 A full-stack app that detects emotions from:
-- >  Image Files  
-- >  Video Files  
-- >  Live Webcam Feed
+>  Image Files  
+>  Video Files  
+>  Live Webcam Feed
 
 Tech Stack:  
-Frontend: HTML, CSS, JavaScript  
+Frontend: HTML, CSS, JavaScript 
 Backend: Flask (Python)  
 ML: TensorFlow  
 
 >_  <a href="https://github.com/YESWANTH-S/Terminal-Converter">Terminal Converter</a>  
 
 A sleek, terminal-inspired multimedia file converter:  
-- > Drag & drop file support
-- > Choose your desired output format easily
-- > Efficient processing powered by FFmpeg
+>  Drag & drop file support
+>  Choose your desired output format easily
+>  Efficient processing powered by FFmpeg
 
 Tech Stack:  
 Frontend: HTML, CSS, JavaScript  
@@ -42,13 +42,14 @@ yeswanth@github:~$ ls tech_stack/
 
 yeswanth@github:~$ nano learning.txt
   
-📝 Currently Learning:
-  - Advanced Full-Stack Development (React, Node.js)
-  - Linux Administration & Scripting (Zsh, System Automation)
+Currently Learning:
+- Advanced Full-Stack Development (React, Node.js)
+- Linux Administration & Scripting (Zsh, System Automation)
 
 yeswanth@github:~$ grep -i "stats" ~/github_data
-<img src="https://term-stats.onrender.com/basic" alt="GitHub Stats" width="350" /> 
-<img src="https://term-stats.onrender.com/streaks" alt="GitHub Stats" width="350" />
+
+<img src="https://term-stats.onrender.com/all_stats" alt="GitHub Stats" width="99%" /> 
+
 yeswanth@github:~$ ./contact_me.sh
   
 ✉️ Email: <a href="mailto:yeswanthshanmugam@gmail.com">yeswanthshanmugam@gmail.com</a>  
