@@ -33,6 +33,19 @@ Frontend: HTML, CSS, JavaScript
 Backend: Flask (Python)  
 Conversion Engine: FFmpeg, Cairosvg
 
+/\/ <a href="https://github.com/YESWANTH-S/Term-Stats">Term-Stats</a>  
+
+A customizable terminal-themed GitHub stats generator:  
+>  Instantly track your GitHub metrics with terminal-style flair  
+>  Embed stylish SVGs directly in your README  
+>  UI-based customization with one-click stat URL generation  
+
+**Tech Stack:**  
+Frontend: HTML, CSS, JavaScript  
+Backend: Flask (Python)  
+Data Sources: GitHub API, WakaTime API  
+Rendering Engine: Jinja2 (for dynamic SVGs)
+
 yeswanth@github:~$ ls tech_stack/
   
 📁 Languages        →  Python, JavaScript
@@ -48,8 +61,9 @@ Currently Learning:
 
 yeswanth@github:~$ grep -i "stats" ~/github_data
 
-<img src="https://term-stats.onrender.com/all_stats" alt="GitHub Stats" width="99%" /> 
-
+<img src="https://terminal-stats.onrender.com/all_stats" alt="GitHub Stats" width="99%" /> 
+<img src="https://terminal-stats.onrender.com/full_stats" alt="GitHub Stats" width="99%" />
+  
 yeswanth@github:~$ ./contact_me.sh
   
 ✉️ Email: <a href="mailto:yeswanthshanmugam@gmail.com">yeswanthshanmugam@gmail.com</a>  
