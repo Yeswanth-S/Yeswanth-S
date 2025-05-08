@@ -1,0 +1,46 @@
+name: Term Stats Sync
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Daily at midnight UTC
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository with full history
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0  # important for amend!
+
+    - name: Replace timestamp in README.md
+      run: |
+        TIMESTAMP=$(date +%s)
+        sed -i "s/t=[0-9]\+/t=$TIMESTAMP/g" README.md
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+        git add README.md
+
+        # Check if there are actual changes
+        if git diff --cached --quiet; then
+          echo "No changes to commit"
+          exit 0
+        fi
+
+        LAST_COMMIT_MSG=$(git log -1 --pretty=%B)
+
+        if [[ "$LAST_COMMIT_MSG" == "Auto-update timestamp" ]]; then
+          echo "Amending last timestamp commit..."
+          git commit --amend -m "Auto-update timestamp"
+          git push --force-with-lease
+        else
+          echo "Creating new commit..."
+          git commit -m "Auto-update timestamp"
+          git push
+        fi
