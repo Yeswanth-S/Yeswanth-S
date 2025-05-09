@@ -2,7 +2,7 @@ name: Term Stats Sync
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Daily at midnight UTC
+    - cron: '30 17 * * *'  # Daily at 11:00 PM IST
   workflow_dispatch:
 
 jobs:
@@ -13,7 +13,12 @@ jobs:
     - name: Checkout repository with full history
       uses: actions/checkout@v3
       with:
-        fetch-depth: 0  # important for amend!
+        fetch-depth: 0
+
+    - name: Log current time in IST
+      run: |
+        echo "Current IST time:"
+        TZ='Asia/Kolkata' date
 
     - name: Replace timestamp in README.md
       run: |
@@ -27,7 +32,6 @@ jobs:
 
         git add README.md
 
-        # Check if there are actual changes
         if git diff --cached --quiet; then
           echo "No changes to commit"
           exit 0
