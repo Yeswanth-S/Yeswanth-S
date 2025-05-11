@@ -40,7 +40,7 @@ A customizable terminal-themed GitHub stats generator:
 >  Embed stylish SVGs directly in your README  
 >  UI-based customization with one-click stat URL generation  
 
-**Tech Stack:**  
+Tech Stack: 
 Frontend: HTML, CSS, JavaScript  
 Backend: Flask (Python)  
 Data Sources: GitHub API, WakaTime API  
@@ -61,8 +61,8 @@ Currently Learning:
 
 yeswanth@github:~$ grep -i "stats" ~/github_data
 
-<img src="https://terminal-stats.onrender.com/all_stats?t=1746773152" alt="GitHub Stats" width="99%" /> 
-<img src="https://terminal-stats.onrender.com/full_stats?t=1746773152" alt="GitHub Stats" width="99%" />
+<img src="https://yeswanths-stats.onrender.com/all_stats?t=174677312" alt="GitHub Stats" width="99%" /> 
+<img src="https://yeswanths-stats.onrender.com/full_stats?t=174677312" alt="GitHub Stats" width="99%" />
   
 yeswanth@github:~$ ./contact_me.sh
   
