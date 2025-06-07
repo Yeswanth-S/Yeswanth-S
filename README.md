@@ -68,8 +68,8 @@ Currently Learning:
 
 yeswanth@github:~$ grep -i "stats" ~/github_data
 
-<img src="https://yeswanths-stats.onrender.com/all_stats?t=1749231828" alt="GitHub Stats" width="99%" /> 
-<img src="https://yeswanths-stats.onrender.com/full_stats?t=1749231828" alt="GitHub Stats" width="99%" />
+<img src="https://yeswanths-stats.onrender.com/all_stats?t=1772300770" alt="GitHub Stats" width="99%" /> 
+<img src="https://yeswanths-stats.onrender.com/full_stats?t=1772300770" alt="GitHub Stats" width="99%" />
   
 yeswanth@github:~$ ./contact_me.sh
   
