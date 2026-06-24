@@ -46,13 +46,6 @@ Backend: Flask (Python)
 Data Sources: GitHub API, WakaTime API  
 Rendering Engine: Jinja2 (for dynamic SVGs)
 
-⌬ <a href="https://github.com/Yeswanth-S/Yurei">Yurei</a>  
-  
-An anime-themed personalization app for Android:
->  KWGT widgets, wallpapers, and Komponents designed with anime aesthetics.
->  Custom setups that blend style and functionality
->  Ideal for users who love detailed home screen customization
-
 yeswanth@github:~$ ls tech_stack/
   
 📁 Languages        →  Python, JavaScript
