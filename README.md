@@ -11,7 +11,7 @@ yeswanth@github:~$ cat projects.txt
   
 ^_^ <a href="https://github.com/YESWANTH-S/Emotion_Recognition_App">Emotion Recognition App</a>
 
-A full-stack app that detects emotions from:
+A real-time app that detects emotions from:
 >  Image Files  
 >  Video Files  
 >  Live Webcam Feed
@@ -19,45 +19,45 @@ A full-stack app that detects emotions from:
 Tech Stack:  
 Frontend: HTML, CSS, JavaScript 
 Backend: Flask (Python)  
-ML: TensorFlow  
+ML & CV: TensorFlow, OpenCV  
 
->_  <a href="https://github.com/YESWANTH-S/Terminal-Converter">Terminal Converter</a>  
+>_  <a href="https://github.com/YESWANTH-S/Terminal-Converter">Terminal-Converter</a>  
 
-A sleek, terminal-inspired multimedia file converter:  
->  Drag & drop file support
->  Choose your desired output format easily
->  Efficient processing powered by FFmpeg
+A terminal-styled multimedia file converter:  
+>  Drag & drop support for audio, video, images, and SVGs
+>  Batch conversion with live progress
+>  Fully runs locally on your machine
 
 Tech Stack:  
 Frontend: HTML, CSS, JavaScript  
 Backend: Flask (Python)  
-Conversion Engine: FFmpeg, Cairosvg
+Media Engine: FFmpeg, Pillow, resvg
 
 /\/ <a href="https://github.com/YESWANTH-S/Term-Stats">Term-Stats</a>  
 
 A customizable terminal-themed GitHub stats generator:  
->  Instantly track your GitHub metrics with terminal-style flair  
->  Embed stylish SVGs directly in your README  
->  UI-based customization with one-click stat URL generation  
+>  Live SVG cards for streaks, languages, and WakaTime  
+>  UI customizer with multiple themes (like Catppuccin) and GIF modes
+>  One-click URL generation to embed directly in your README  
 
 Tech Stack: 
 Frontend: HTML, CSS, JavaScript  
-Backend: Flask (Python)  
-Data Sources: GitHub API, WakaTime API  
-Rendering Engine: Jinja2 (for dynamic SVGs)
+Backend: Flask (Python), Jinja2  
+Data Sources: GitHub API, WakaTime API
 
 yeswanth@github:~$ ls tech_stack/
   
-📁 Languages        →  Python, JavaScript
+📁 Languages        →  Python, JavaScript, Lua
+📁 Frontend         →  HTML & CSS
 📁 Frameworks       →  Flask, TensorFlow
-📁 Tools            →  Git, Docker, OpenCV
-📁 OS & Shell       →  Linux, Bash
+📁 Tools & Media    →  Git, Docker, OpenCV, FFmpeg
+📁 OS & Shell       →  Linux, Bash, Zsh
 
 yeswanth@github:~$ nano learning.txt
   
 Currently Learning:
-- Advanced Full-Stack Development (React, Node.js)
-- Linux Administration & Scripting (Zsh, System Automation)
+- Lua Scripting
+- Advanced Shell Scripting & Automation
 
 yeswanth@github:~$ grep -i "stats" ~/github_data
 
